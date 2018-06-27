@@ -20,7 +20,7 @@ RUN apk add --no-cache --update \
     # Cleanup
     && rm -rf /tmp/*
 
-RUN pip3  install --ignore-installed  --no-cache-dir flower==0.9.0 \
+RUN pip3  install --ignore-installed  --no-cache-dir flower==0.9.2 \
   # Cleanup (Remove all tests folder and python compiled files)
   && find /usr/local \
     \( -type d -a -name test -o -name tests \) -exec echo rm -rf '{}' + \
